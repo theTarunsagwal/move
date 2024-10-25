@@ -1,0 +1,116 @@
+
+body{
+    /* background:linear-gradient(to right,#8929ad,#436aac,#43b7b8); */
+    background-color: #000;
+}
+input{
+    background-color: transparent;
+    border: 2px solid #012a72;
+    border-radius: 2rem;
+    padding: .3rem .5rem;
+    text-transform: capitalize;
+    outline: none;
+    color: aliceblue;
+    margin-left: 35rem;
+    margin-top: 2rem;
+}
+.movie{
+    background-color: #121013;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    /* overflow: hidden; */
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    display: flex;
+}
+.box{
+    height: 25rem;
+    border-radius: 1rem;
+    position: relative;
+    width: 15rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    margin-left: 5rem;
+    background-color: #fff;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    position:absolute;
+    font-size: 1rem;
+    margin-left: -12.5rem;
+    color: aliceblue;
+    width: 50%;
+}
+.box:hover h1{
+    transform:translateX(216px);
+    }
+    .over{
+        height: 30rem;
+        width: 100%;
+        background-color: #0e0000;
+        position: absolute;
+        z-index: 1;
+        margin-top: 10rem;
+        transform: translateY(241px);
+    }
+    h2{
+        color: aliceblue;
+        font-size: 1rem;
+    }
+    p{
+        margin-left: 1rem;
+        font-size: 2rem;
+        position: absolute;
+        top: -2rem;
+        color: aliceblue;
+        font-weight: bolder;
+    }
+    .box:hover .over {
+        transform: translateY(-50px);
+    }
+    h3{
+        /* border: 5px solid #851111; */
+        height: 2rem;
+        width: 2.5rem;
+        background-color: #ca48ca;
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        margin-left: 12rem;
+    }
+    .green{
+        color: green;
+    }
+    .blue{
+        color: blue;
+    }
+    .red{
+        color: red;
+    }
+    header{
+        font-size: 5rem;
+        font-weight: bolder;
+        text-transform:uppercase;
+        margin-left: 32rem;
+        margin-top: 4rem;
+        color: #2a2828;
+    }
+    span{
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        color: #012a72;
+    }
+    a{
+        color: #2a2828;
+        text-decoration: none;
+    }
+    .dd:hover a{
+        color: #fff;
+        /* box-shadow:0 0 10px #dfbeeb; */
+        text-shadow: 0px 0px 10px #dfbeeb;
+        border-radius: 2rem;
+    }
