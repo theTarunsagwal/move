@@ -14,23 +14,30 @@ async function fetchMovies(url) {
 
 function displayMovies(movies) {
   const movieGrid = document.querySelector('.movie-grid');
-  movieGrid.innerHTML = ''; // Clear previous movies
+  movieGrid.innerHTML = ''; 
 
   movies.forEach(movie => {
     const { title, poster_path, overview, vote_average } = movie;
 
     const movieCard = document.createElement('div');
-    movieCard.classList.add('movie-card');
+    movieCard.classList.add('card');
+    movieCard.style.background = `no-repeat center/cover url(${IMG_PATH + poster_path})`;
+
 
     movieCard.innerHTML = `
-      <img src="${IMG_PATH + poster_path}" alt="${title}">
-      <div class="overview">
-        <h2>${title}</h2>
-        <p>Overview</p>
-        <h3 class="${getRatingClass(vote_average)}">${vote_average}</h3>
-        <p>${overview}</p>
-      </div>
-    `;
+    
+    <div class="card__content">
+                  <p class="card__title">${title}<span>${vote_average}</span></p>
+                  <p class="card__description">${overview}</p>
+                </div>
+      
+                `;
+                // <div class="overview">
+                //   <h2></h2>
+                //   <p>Overview</p>
+                //   <h3 class="${getRatingClass(vote_average)}"></h3>
+                //   <p></p>
+                // </div>
 
     movieGrid.appendChild(movieCard);
   });
